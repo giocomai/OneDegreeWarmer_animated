@@ -155,8 +155,8 @@ staticOneCity <-
   annotate(geom = "text",
            x = 1915,
            y = unique(oneCity$AverageTempCentury),
-           label = c("19th century average",
-                     "20th century average"),
+           label = c("20th century average",
+                     "21st century average"),
            vjust = -1,
            fontface = 2,
            size = 4) +
