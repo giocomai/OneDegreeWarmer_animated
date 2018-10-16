@@ -4,6 +4,10 @@ This repository includes all the code and data needed to create the animated tim
 
 Find out more about the investigation on its website [https://www.onedegreewarmer.eu/](https://www.onedegreewarmer.eu/).
 
+## How does this work?
+
+This repository includes the R code needed to generate static and animated time series for all the cities included in the dataset. If you run the `bulk_create_graphs.R` file, graphs in png, gif, and mp4 format for all cities will be automatically created in sub-folders. 
+
 ## Are these data free to use?
 
 Yes, according to the notice included on the investigation's website:
