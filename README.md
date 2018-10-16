@@ -1,6 +1,6 @@
 # Create an animated time series with data from EdjNet's 'One Degree Warmer' investigation
 
-This repository includes all the code and data needed to create the animated time series presented [in this blog post](https://codebase.giorgiocomai.eu/2018/10/17/one-degree-warmer-animating-time-series-with-ggplot-and-gganimate/.
+This repository includes all the code and data needed to create the animated time series presented [in this blog post](https://codebase.giorgiocomai.eu/2018/10/17/one-degree-warmer-animating-time-series-with-ggplot-and-gganimate/).
 
 Find out more about the investigation on its website [https://www.onedegreewarmer.eu/](https://www.onedegreewarmer.eu/).
 
