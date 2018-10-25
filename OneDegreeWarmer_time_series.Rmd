@@ -69,6 +69,8 @@ if (!file.exists(temperaturesMerged_csv_location)) {
   temperatures <- read_csv(temperaturesMerged_csv_location)
 }
 
+cityTranslations <- read_csv(file = file.path("data", "cityTranslations.csv"))
+
 ```
 
 
@@ -91,6 +93,9 @@ tempCoord <- left_join(x = temperatures,
 ```{r staticOneCity}
 i <- params$city
 
+# get the title in English
+cityNameEnglish <- cityTranslations$English[cityTranslations$Original==i]
+
 oneCity <- 
   temperatures %>% 
   filter(City == i) %>% 
@@ -103,6 +108,7 @@ oneCity <-
 
 oneCity <-  oneCity %>% 
   mutate(TempDifference = max(oneCity$AverageTempCentury)-min(oneCity$AverageTempCentury)) 
+
 
 
 staticOneCity <- 
@@ -160,7 +166,7 @@ staticOneCity <-
            vjust = -1,
            fontface = 2,
            size = 4) +
-  labs(title = paste("Average temperature in", i, "(1900-2017)"), 
+  labs(title = paste("Average temperature in", cityNameEnglish, "(1900-2017)"), 
        caption = "Source: EdjNet/ECMWF") +
   theme(plot.caption=element_text(hjust = 0,
                                   colour = "darkgray")) +
