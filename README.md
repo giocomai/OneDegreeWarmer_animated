@@ -8,6 +8,15 @@ Find out more about the investigation on its website [https://www.onedegreewarme
 
 This repository includes the R code needed to generate static and animated time series for all the cities included in the dataset. If you run the `bulk_create_graphs.R` file, graphs in png, gif, and mp4 format for all cities will be automatically created in sub-folders. 
 
+If you have R installed on your system, all you need to do is:
+
+```
+git clone git@github.com:giocomai/OneDegreeWarmer_animated.git
+cd OneDegreeWarmer_animated
+Rscript bulk_create_graphs.R
+
+```
+
 ## Are these data free to use?
 
 Yes, according to the notice included on the investigation's website:
