@@ -215,7 +215,7 @@ ggsave(filename = file.path("png", paste0(i, ".png")))
  animatedOneCity <- staticOneCity +
   transition_reveal(id = City,
                     along = Date,
-                    range = as.numeric(c(1900, 2050))) # to add pause at the last frame
+                    range = as.numeric(c(1900, 2080))) # to add pause at the last frame
 
 ```
 
@@ -250,7 +250,7 @@ df <- animate(animatedOneCity,
               height = 1080,
               res = 250,
               fps = 25,
-              nframes = 200)
+              nframes = 300)
 ```
 
 
